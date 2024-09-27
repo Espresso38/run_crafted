@@ -6,6 +6,8 @@ import Home from './pages/Home.jsx'
 import VDOTCalculator from './pages/VDOTCalculator.jsx'
 import PacesTable from './components/PacesTable.jsx'
 import TrainingPlan from './pages/TrainingPlan.jsx'
+import SignupForm from './pages/SignupForm.jsx'
+import LoginForm from './pages/LoginForm.jsx'
 import './index.css'
 
 createRoot(document.getElementById('content')).render(
@@ -15,6 +17,14 @@ createRoot(document.getElementById('content')).render(
     <VDOTCalculator />
     <PacesTable />
     <TrainingPlan />
+    <SignupForm />
+    <LoginForm />
     <Footer />
+  </StrictMode>,
+)
+
+createRoot(document.getElementById('content')).render(
+  <StrictMode>
+    <LoginForm />
   </StrictMode>,
 )
