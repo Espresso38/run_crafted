@@ -1,4 +1,6 @@
-function VDOTCalculator() {
+import PacesTable from "../components/PacesTable";
+
+function VDOTCalc() {
     return (
         <>
         <div
@@ -56,8 +58,9 @@ function VDOTCalculator() {
             </div>
           </div>
         </div>
+        <PacesTable />
       </>
     )
 }
 
-export default VDOTCalculator;
+export default VDOTCalc;
