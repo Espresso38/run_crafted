@@ -1,53 +1,30 @@
 function PacesTable() {
-    return (
-        <>
-        <div id="tableVDOT" className="w-full p-4 md:p-8">
-          <table className="w-full border-collapse border border-gray-400">
+  return (
+      <>
+      <div id="tableVDOT" className="w-full p-4 md:p-8">
+        <div className="overflow-x-auto">
+          <table className="min-w-full border-collapse border border-gray-400">
             <caption className="text-lg font-semibold mb-4">
               Workout paces based on your V-DOT level
             </caption>
             <thead className="bg-slate-200">
               <tr>
-                <th
-                  scope="col"
-                  rowSpan={2}
-                  className="border border-gray-400 p-2 text-center"
-                >
+                <th scope="col" rowSpan={2} className="border border-gray-400 p-2 text-center">
                   Time
                 </th>
-                <th
-                  scope="col"
-                  rowSpan={2}
-                  className="border border-gray-400 p-2 text-center"
-                >
+                <th scope="col" rowSpan={2} className="border border-gray-400 p-2 text-center">
                   E (easy) / L (long)
                 </th>
-                <th
-                  scope="col"
-                  rowSpan={2}
-                  className="border border-gray-400 p-2 text-center"
-                >
+                <th scope="col" rowSpan={2} className="border border-gray-400 p-2 text-center">
                   M (marathon pace)
                 </th>
-                <th
-                  scope="col"
-                  colSpan={3}
-                  className="border border-gray-400 p-2 text-center"
-                >
+                <th scope="col" colSpan={3} className="border border-gray-400 p-2 text-center">
                   T (threshold pace)
                 </th>
-                <th
-                  scope="col"
-                  colSpan={4}
-                  className="border border-gray-400 p-2 text-center"
-                >
+                <th scope="col" colSpan={4} className="border border-gray-400 p-2 text-center">
                   I (interval pace)
                 </th>
-                <th
-                  scope="col"
-                  colSpan={5}
-                  className="border border-gray-400 p-2 text-center"
-                >
+                <th scope="col" colSpan={5} className="border border-gray-400 p-2 text-center">
                   R (repetition pace)
                 </th>
               </tr>
@@ -151,8 +128,9 @@ function PacesTable() {
             </tbody>
           </table>
         </div>
-        </>
-    )
+      </div>
+      </>
+  );
 }
 
 export default PacesTable;
