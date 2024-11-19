@@ -1,3 +1,5 @@
+import PacesTable from "../components/PacesTable";
+
 function TrainingPlan() {
     return (
         <>
@@ -40,6 +42,7 @@ function TrainingPlan() {
             </div>
             <input
             type="submit"
+            value="Submit"
             defaultValue="Create Training Plan"
             className="bg-slate-400 p-2 rounded-3xl"
             />
@@ -57,6 +60,7 @@ function TrainingPlan() {
         </p>
         </div>
     </div>
+    <PacesTable />
     <div id="tableTraining" className="w-full p-4 md:p-8">
         <table className="w-full border-collapse border border-gray-400">
         <caption className="text-lg font-semibold mb-4">Your training</caption>

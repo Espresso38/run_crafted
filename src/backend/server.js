@@ -11,21 +11,22 @@ const saltRounds = 10;
 
 app.post('/api/signup', async (req, res) => {
     const { username, email, password } = req.body;
+    
+    console.log('Signup request:', { username, email });
 
     try {
         const userCheck = await pool.query('SELECT * FROM users WHERE username = $1', [username]);
-
         if (userCheck.rows.length > 0) {
             return res.status(400).json({ message: 'Username already exists' });
         }
 
         const emailCheck = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
-
         if (emailCheck.rows.length > 0) {
             return res.status(400).json({ message: 'Email already exists' });
         }
 
         const hashedPassword = await bcrypt.hash(password, saltRounds);
+        console.log('Hashed Password:', hashedPassword);
 
         const result = await pool.query(
             'INSERT INTO users (username, email, password) VALUES ($1, $2, $3) RETURNING *',
