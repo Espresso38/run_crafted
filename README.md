@@ -2,10 +2,10 @@
 
 Welcome to RunCrafted! This website is designed for runners to calculate training paces and improve their performance. It is inspired by the VDOT Calculator developed by renowned running coach Jack Daniels.
 
-🚧 Project Status
+# 🚧 Project Status
 This project is currently under development, and new features are being actively added. Stay tuned for updates!
 
-🚀 How to Run the Project
+# 🚀 How to Run the Project
 Follow these steps to set up and run the project locally:
 
 Clone the repository:
@@ -32,10 +32,10 @@ bash:
 Open the application:
 The website will be available at http://localhost:5137.
 
-🌟 Features
+# 🌟 Features
 VDOT Calculator: Estimate your optimal training paces based on Jack Daniels' methods.
 Training Plan Generator (coming soon): Personalized plans to help you achieve your running goals.
-🏗️ Roadmap
+# 🏗️ Roadmap
  Training plan setup
  Improved user interface
  Additional pace calculators
