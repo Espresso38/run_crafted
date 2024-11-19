@@ -11,24 +11,24 @@ Follow these steps to set up and run the project locally:
 Clone the repository:
 
 bash:
-  git clone <repository-url>
-  cd <repository-directory>
+  'git clone <repository-url>'
+  'cd <repository-directory>'
 Install dependencies:
 Make sure you have Node.js installed, then run:
 
 bash:
-  npm install
+  'npm install'
 Start the development server:
 Run the following command in the main directory:
 
 bash:
-  npm run dev
-Start the backend server:
+  'npm run dev'
+Start the backend server on different terminal:
 Navigate to the backend directory and start the server:
 
 bash:
-  cd src/backend
-  node server.js
+  'cd src/backend'
+  'node server.js'
 Open the application:
 The website will be available at http://localhost:5137.
 
